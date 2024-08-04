@@ -5,7 +5,7 @@ import 'package:task2_deltana/utils/MyTheme.dart';
 void AddVisaSuccessDialog(BuildContext context){
   showDialog(context: context, builder: (BuildContext context){
     return AlertDialog(
-      backgroundColor: MyTheme.lightWhite,
+      backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.spMin)),
       content: Column(
         mainAxisSize: MainAxisSize.min,
