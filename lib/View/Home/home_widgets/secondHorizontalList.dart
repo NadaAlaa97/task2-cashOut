@@ -14,7 +14,7 @@ class SecondHorizontalProductsList extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => ProductViewModel(),
       child: SizedBox(
-        height: 250.h,
+        height: 240,
         child: Consumer<ProductViewModel>(
           builder: (context, productViewModel, child) {
             final product = productViewModel.products.isNotEmpty
@@ -31,8 +31,8 @@ class SecondHorizontalProductsList extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.all(8),
                   child: Container(
-                    height: 207.h,
-                    width: 45.w,
+                    height: 190,
+                    width: 150,
                     decoration: BoxDecoration(
                       border: Border.all(color: MyTheme.greyColor),
                       borderRadius: BorderRadius.circular(10.spMin),
@@ -54,8 +54,8 @@ class SecondHorizontalProductsList extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              height: 110.h,
-                              width: 150.w,
+                              height: 120,
+                              width: 150,
                               color: MyTheme.innerContainer,
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),
@@ -118,7 +118,7 @@ class SecondHorizontalProductsList extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 1.h),
+                        SizedBox(height: 4.h),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
